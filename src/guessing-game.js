@@ -7,15 +7,16 @@ class GuessingGame {
     }
 
     guess() {
-
+        this.currentNumber = Math.ceil((this.min + (this.max - this.min)/2));
+        return this.currentNumber
     }
 
     lower() {
-
+        this.max = this.currentNumber;
     }
 
     greater() {
-
+        this.min = this.currentNumber;
     }
 }
 
